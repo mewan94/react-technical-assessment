@@ -2,7 +2,6 @@ import { render, screen, cleanup } from '@testing-library/react';
 import UserForm from './userForm'
 import { Provider } from 'react-redux';
 import { store } from './../../app/store';
-import { MetaDataRecordProps } from '../../components/input/dynamicUserInput';
 
 afterEach(() => {
     cleanup()
