@@ -7,6 +7,7 @@ interface TextInputProps {
     label: string,
     value?: string,
     isDisabled?: boolean,
+    isRequired?: boolean,
     placeholder?: string,
     customClassName?: string,
     onChange?: (value: string) => void
@@ -21,7 +22,8 @@ const TextInput = ({
     isDisabled = false,
     placeholder = '',
     label,
-    onChange
+    onChange,
+    isRequired=false
 }: TextInputProps) => {
 
     const handleChange = (e: { target: { value: string; }; }) => {
@@ -39,11 +41,12 @@ const TextInput = ({
                     id={id}
                     type={type}
                     name={name}
-                    value={value}
+                    defaultValue={value}
                     className={`text-sm sm:text-base placeholder-gray-500 px-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 ${customClassName}`}
                     placeholder={placeholder}
                     disabled={isDisabled}
                     onChange={handleChange}
+                    required={isRequired}
                 />
             </div>
         </>

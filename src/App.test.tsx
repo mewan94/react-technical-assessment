@@ -26,12 +26,12 @@ test('Should render User Form component', () => {
   expect(UserFormElement).toBeInTheDocument();
 });
 
-test('Should render Footer component', () => {
+test('Should render Header component', () => {
   render(
     <Provider store={store}>
       <App />
     </Provider>
   );
-  const FooterElement = screen.getByTestId('footer-1');
-  expect(FooterElement).toBeInTheDocument();
+  const HeaderElement = screen.getByTestId('header-1');
+  expect(HeaderElement).toBeInTheDocument();
 });

@@ -8,6 +8,7 @@ interface MobileNoInputProps {
     value?: string,
     label: string,
     isDisabled?: boolean,
+    isRequired?: boolean,
     placeholder?: string,
     customClassName?: string,
     onChange?: (value: string) => void
@@ -19,6 +20,7 @@ const MobileNoInput = ({
     name, 
     customClassName = '', 
     isDisabled = false, 
+    isRequired= false,
     placeholder = '', 
     label, 
     value = '',
@@ -42,6 +44,7 @@ const MobileNoInput = ({
                     className={`text-sm sm:text-base placeholder-gray-500 px-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 ${customClassName}`}
                     placeholder={placeholder}
                     disabled={isDisabled}
+                    required={isRequired}
                     format="+(##) ##-### ####"
                     mask="_"
                     value={value}

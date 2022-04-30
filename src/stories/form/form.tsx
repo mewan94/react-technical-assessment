@@ -5,7 +5,7 @@ import { Button, TextInput, DropDown, RadioBtnGroup, MobileNoInput } from '../..
 export const Form: React.VFC = () => {
 
     return (
-        <FormWrapper>
+        <FormWrapper onSubmit={values => {console.log((values))}}>
             <FormHeader title={'Data Form'} customClass='text-center' />
             <FormBody customClass="mt-10">
                 <Col customClass="mb-6">

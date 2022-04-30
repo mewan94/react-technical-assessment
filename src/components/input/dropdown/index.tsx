@@ -12,10 +12,11 @@ interface DropDownProps {
     name: string,
     value?: string | undefined,
     onChange: (value: optionType) => void,
-    isDisabled?: boolean
+    isDisabled?: boolean,
+    isRequired?: boolean
 }
 
-const DropDown = ({ customClass = '', options, title = '', name, value=undefined, onChange, isDisabled=false }: DropDownProps) => {
+const DropDown = ({ customClass = '', options, title = '', name, value=undefined, onChange, isDisabled=false, isRequired=false }: DropDownProps) => {
 
     const handleChange = (option: optionType) => {
         if(onChange){
@@ -31,6 +32,7 @@ const DropDown = ({ customClass = '', options, title = '', name, value=undefined
                 name={name}
                 defaultValue={value}
                 disabled={isDisabled}
+                required={isRequired}
                 className={`text-sm sm:text-base placeholder-gray-500 px-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 cursor-pointer ${customClass}`}
             >
                 {options.map(op => {
