@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { UserView } from "./userFormView";
-import UserForm from "./userForm";
 import {
     fetchMetaDataAsync, selectMetaData, selectUserData, selectStatus
 } from './userFormSlice';
+import UserForm from "./userForm";
+import { UserView } from "./userFormView";
 import { UserReTry } from "./userFormRetry";
 import { UserFormLoading } from "./userFormLoading";
 
