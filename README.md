@@ -62,14 +62,4 @@ Launches the storybook component explorer on port 6006.
 
 ## File Structure
 
-+-- /react-technical-assesment      : React application
-|   +-- /public                     : React public assets
-|   +-- /src                        : React app source
-|       +-- /app                    : App Config
-|       +-- /components             : UI components
-|       +-- /features               : React features
-|       +-- /libs                   : Common utility functions
-|       +-- /stories                : Storybook stories
-|       +-- /App.tsx                : App file [source code]
-|       +-- /index.tsx              : App initiate file
-+------ /package.json               : React dependencies
+<img width="529" alt="Screenshot 2022-04-30 at 12 35 09 PM" src="https://user-images.githubusercontent.com/14161009/166095715-8738cac5-22c3-4fa5-be2d-d0b86a58eab6.png">
