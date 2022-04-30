@@ -2,7 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
-
 ![](assets/20220430_105525_ezgif-3-077d60119b.gif)
 
 # Used Packages
@@ -74,9 +73,3 @@ Launches the storybook component explorer on port 6006.
 |       +-- /App.tsx                : App file [source code]
 |       +-- /index.tsx              : App initiate file
 +------ /package.json               : React dependencies
-
-## Notes
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
